@@ -1,0 +1,25 @@
+# Import datasets needed for app
+
+rm(list=ls())
+
+# s <- read.csv("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/shots_2025_man.csv")
+# gl <- read.csv("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/gamelines.csv")
+# lines <- read.csv("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/line_time.csv")
+# pairs <- read.csv("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/pair_time.csv")
+# pids <- read.csv("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/playerids.csv")
+# teams <- read.csv("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/teamstats26.csv")
+# teams[nrow(teams) + 1, ] <- c(list(0, "National Hockey League", "All Teams"), rep(NA, 33))
+# linestats <- readRDS("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/linestats.rds")
+# player_index <- readRDS("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/player_index.rds")
+# skaters <- read.csv("/home/nathan/RFolder/MU SPRT/COSC 5500/Final/Data/skaters.csv")
+
+s <- read.csv("Data/shots_2025_man.csv")
+gl <- read.csv("Data/gamelines.csv")
+lines <- read.csv("Data/line_time.csv")
+pairs <- read.csv("Data/pair_time.csv")
+pids <- read.csv("Data/playerids.csv")
+teams <- read.csv("Data/teamstats26.csv")
+teams[nrow(teams) + 1, ] <- c(list(0, "National Hockey League", "All Teams"), rep(NA, 33))
+linestats <- readRDS("Data/linestats.rds")
+player_index <- readRDS("Data/player_index.rds")
+skaters <- read.csv("Data/skaters.csv")
